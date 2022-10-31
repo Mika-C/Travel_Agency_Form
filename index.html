@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    
+    <head>
+        <title>Resgistration - Travel Spot</title>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <!--Logo-->
+        <img src = "./images/logo.jpg"
+        alt = "Logo of the company" 
+        width="300"
+        height="150"
+        />
+
+        <hr>
+
+        <h1>Sign Up</h1>
+        <h2>Your next travel starts here!</h2>
+
+        <p>Fill the form below:</p>
+
+        <!--label creates the name of section-->
+        <label for="Date & Time">Resgistration date</label>
+
+        <!--creates a calendar with selectable dates and times for the user to choose-->
+        <input type="datetime-local" id="Date & Time" name="Date & Time" value="yyyy-mm-dd --:-- --">
+        <br>
+        <br>
+
+        <!--Creates a form-->
+        <form action= ""> 
+            <!--creates a specifit zone withing a form that will create a sqare/rectable where the output of the code will be shopwn when ran-->
+            <fieldset>
+                <!--name of the zone-->
+                <legend>Personal Information</legend>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+
+                    <!--creates an area where user's name can be enter. id and name need to have the same name has in the label for-->
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="name"> 
+                </div>
+                
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                      <!--creates an area where user's email can be enter.id and name need to have the same name has in the label for-->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                      <!--creates an area where user's phone number can be enter.id and name need to have the same name has in the label for-->
+                    <label for="phone-num">Phone:</label>
+                    <input type="tel" id="phone-num" name="phone-num" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}"> <!--pattern specifies in what format the phone should be entered. [0-9] for numbers allowed. {#} for how many of this number should be entered. and - for seperation between numberes-->
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Enable the user to select a file.id and name need to have the same name has in the label for-->
+                    <label for="password">Password:</label>
+                    <input type="file" id="password" name="password">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--enables user to pinpoint a cursor range. id and name need to have the same name has in the label for-->
+                    <label for="stress-level">What is your stress level?</label>
+                    <input type="range" id="stress-level" name="stress-level"
+                           min="0"
+                           max="100">
+                </div>  
+            </fieldset>
+            <br>
+
+             <!--creates a specifit zone withing a form that will create a sqare/rectable where the output of the code will be shopwn when ran-->
+            <fieldset>
+                <legend>Travel Destination</legend>
+                <p>Tell us where do you want to go:</p>
+                
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to input a number that represent how many people are traveling-->
+                    <label for="people-travelling">How many people will be travelling?</label>
+                    <input type="number" id="people-travelling" name="people-travelling"
+                           min="1">
+                </div>
+                
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to selct an option within a list of other options-->
+                    <label for="travel-period">Preffered travel period:</label>
+                    <select name="travel-period" id="travel-period">
+                        <option value="">-Select-</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="night">Night</option>
+                    </select>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to type any form of text-->
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to choose a date. format year-month-date.-->
+                    <label for="departure">Date of Departure:</label>
+                    <input type="date" id="departure" name="departure"
+                           value="yyyy-mm-dd">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to choose a date. format year-month-date.-->
+                    <label for="return">Date of Return</label>
+                    <input type="date" id="return" name="return"
+                           value="yyyy-mm-dd">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates a checkbox that the user can select-->
+                    <input type="checkbox" id="flight" name="flight">
+                    <label for="flight">Include Flight</label>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates a checkbox that the user can select-->
+                    <input type="checkbox" id="hotel" name="hotel">
+                    <label for="hotel">Include Hotel</label>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates a checkbox that the user can select-->
+                    <input type="checkbox" id="meals" name="meals">
+                    <label for="meals">Include Meals</label>
+                </div>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Travel Experience</legend>
+                <p>Tell us about your last travel experience (leave this section empty if you have never travelled before):</p>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Allows user to type any form of text-->
+                    <label for="last-destination">Last Destination</label>
+                    <input type="text" id="last-destination" name="last-destination">
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates choices from which the user can selct from in format of checkbox circles-->
+                    <label for="rate-flight">How do you rate the flight?</label>
+                    <input type="radio" id="good" name="rate-flight" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="normal" name="rate-flight" value="normal">
+                    <label for="good">Normal</label>
+
+                    <input type="radio" id="bad" name="rate-flight" value="bad">
+                    <label for="bad">Bad</label>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates choices from which the user can selct from in format of checkbox circles-->
+                    <label for="rate-hotel">How do you rate the hotel?</label>
+                    <input type="radio" id="good" name="rate-hotel" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="normal" name="rate-hotel" value="normal">
+                    <label for="good">Normal</label>
+                    
+                    <input type="radio" id="bad" name="rate-hotel" value="bad">
+                    <label for="bad">Bad</label>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--Creates choices from which the user can select from in format of checkbox circles-->
+                    <label for="rate-meal">How do you rate the meal?</label>
+                    <input type="radio" id="good" name="rate-meal" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="normal" name="rate-meal" value="normal">
+                    <label for="good">Normal</label>
+                    
+                    <input type="radio" id="bad" name="rate-meal" value="bad">
+                    <label for="bad">Bad</label>
+                </div>
+
+                <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+                <div>
+                    <!--creates an area of text that the user can type in. usually used for comments.-->
+                    <label for="describe-experience">Describe your experience</label>
+                    <br>
+                    <textarea id="describe-experience" name="describe-experience" rows="5" cols="40"></textarea>
+                </div>
+            </fieldset>
+            <br>
+
+            <!--divides each are into blocks where specific code for specifc things can be wtritten. doesn't show up any designed unless specified when the profram is ran-->
+            <div>
+                <!--creates submit and reset buttons-->
+                <input type="submit" value="Sumbit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <br>
+        <hr> <!--Line break. Shows a line in out-->
+
+        <footer>
+            <p>Copyright &copy; 2022. Travel Spot.</p>
+        </footer>
+    </body>
+</html>
